@@ -1,0 +1,68 @@
+<html class="pageback">
+    <head>
+        <link rel="stylesheet" href="portfolio.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <script src="portfolio.js"></script>
+        <nav class="navbar"> 
+            <ul class="navbarleft">
+               <button class="navbtn" onclick="infoButtonClick()" id="toggle-info"><li>ABOUT ME</li></button>
+               <button class="navbtn" onclick="infoButtonClick()" id="toggle-info"><li>PORTFOLIO</li></button>
+            </ul>
+            <a class="logo">
+                <img src="smithy.png" class="logoimg">
+            </a>
+            <ul class="navbarright">
+                <button class="navbtn" onclick="infoButtonClick()" id="toggle-info"><li>COMMISSIONS</li></button>
+                <button class="navbtn" onclick="infoButtonClick()" id="toggle-info"><li>CONTACTS</li></button>
+            </ul>
+        </nav>
+        <div class="quotetxt">
+            "IN THE END WE RETAIN FROM OUR STUDIES ONLY THAT WHICH WE PRACTICALLY APPLY."   JOHANN VAN GOETHE
+        </div>
+        <div class = "ornate">
+            <img src="medieval.png">
+        </div>
+
+        <div class="carousel">
+            <div class="carousel-item">
+                <div class="slide-image" style="background-image: url('https://media.geeksforgeeks.org/img-practice/banner/mern-full-stack-development-classroom-thumbnail.png?v=19625');"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="slide-image" style="background-image: url('https://media.geeksforgeeks.org/img-practice/banner/dsa-to-development-coding-guide-thumbnail.png?v=19625');"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="slide-image" style="background-image: url('https://media.geeksforgeeks.org/img-practice/banner/geeks-classes-live-thumbnail.png?v=19625');"></div>
+            </div>
+            <div class="carousel-item">
+                <div class="slide-image" style="background-image: url('https://media.geeksforgeeks.org/img-practice/banner/gate-crash-course-2024-thumbnail.png?v=19625');"></div>
+            </div>
+        </div>
+
+
+        <div class="bodycontainer">
+            <div class="section1">
+                <h2 class = "title1">
+                    <img src="aboutme.png">
+                </h2>
+            </div>
+            <div class="section2">
+
+            </div>
+            <div class ="section3">
+
+            </div>
+        </div>
+        <script>
+            var dropdownBtn = document.querySelector(".dropdown-btn");
+            var dropdownContent = document.querySelector(".dropdown-content");
+            
+            function toggleDropdown() {
+              dropdownContent.style.display = dropdownContent.style.display === "block"? "none" : "block";
+            }
+            
+            dropdownBtn.addEventListener("click", toggleDropdown);
+        </script>            
+    </body>
+</html>
